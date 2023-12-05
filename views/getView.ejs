@@ -1,0 +1,24 @@
+<!-- public/views/getBookView.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/get.css">
+  <script src="/js/get.js"></script>
+  <title>Get Book</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Get Book by ISBN</h1>
+    <form id="getBookForm">
+      <label for="isbn">ISBN:</label>
+      <input type="text" id="isbn" name="isbn" required>
+      <button type="submit">Get Book</button>
+      <button type="button" onclick="location.href='/';">Go Back</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+</body>
+</html>
