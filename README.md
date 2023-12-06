@@ -12,29 +12,9 @@ npm init
 ```
 
 Install our Node.js dependencies:
-- mongoose
+- mongoose, ejs, express, luxon, nodemon, winston
 ```
-npm i mongoose
-```
-- ejs
-```
-npm i ejs
-```
-- Express
-```
-npm install express
-```
-- Luxon
-```
-npm i luxon
-```
-- Nodemon
-```
-npm i nodemon
-```
-- Winston
-```
-npm i winston
+npm install mongoose ejs express luxon nodemon winston
 ```
 
 Initialize a `.env` file to store mongodb link.
