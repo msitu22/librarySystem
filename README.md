@@ -58,16 +58,30 @@ DATABASE_URL =  '<your-library-database>'
 ### 2. Add a book:
 - To add a new book to the library, make a POST request to the /add endpoint with the required book details. On the front-end, the endpoint is /add-view
 ![image](https://github.com/msitu22/librarySystem/assets/112602900/0e5b6e76-a68d-4f5d-80cc-4e65ac99d3ac)
+
 - If the book is added successfully, you will see the mongoDB is updated with the new book as well
 ![image](https://github.com/msitu22/librarySystem/assets/112602900/cf68262e-1a35-4e6b-90dc-fd15b80ce95a)
 
+- If the book's isbn exsits in the database and all other book items are the same, new book already exists in the database and its quantity will be added to the inventory.
+![image](https://github.com/msitu22/librarySystem/assets/112602900/3bccd6a4-4ade-4f56-a97e-d536f15448cc)
+
+- If the book's isbn exsits in the database but other book items is not, new book is not able to add because the new book isbn might be incorrect
+![image](https://github.com/msitu22/librarySystem/assets/112602900/41b5b63e-1bea-4aac-8a0e-7cad56db0b53)
+
 ### 3. Get a Book
 - To retrieve information about a specific book by ISBN, make a GET request to the /get/:isbn endpoint. On the front-end, the endpoint is /get-view
+![image](https://github.com/msitu22/librarySystem/assets/112602900/cfd8de6b-d650-4046-afd0-45c6895e427b)
+
+- If the isbn does not exist, the message "Book not found" will prompt.
+![image](https://github.com/msitu22/librarySystem/assets/112602900/26ae6774-aaf6-4f0b-948b-aca08a6f21e0)
+ 
 
 ### 4. Delete a Book
 - To delete a book by ISBN, make a DELETE request to the /delete/:isbn endpoint. On the front-end, the endpoint is /delete-view
+![image](https://github.com/msitu22/librarySystem/assets/112602900/040b8652-36f7-45e8-8b02-148c93d8326f)
 
-
+- If the isbn does not exist, the error message will prompt.
+![image](https://github.com/msitu22/librarySystem/assets/112602900/ba0f0d03-6f1c-481d-8a8e-38a4033ef266)
 
 
 ## Error Handling - logging
