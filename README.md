@@ -82,6 +82,13 @@ DATABASE_URL =  '<your-library-database>'
 - If the isbn does not exist, the error message will prompt.
 <img align="center" width=60% height=60% src="https://github.com/msitu22/librarySystem/assets/112602900/ba0f0d03-6f1c-481d-8a8e-38a4033ef266">
 
+## Frontend Integration
+This project provides simple HTML, EJS views, CSS and Javascript for the frontend.
+- Home View: http://127.0.0.1:8080/
+- Add Book View: http://127.0.0.1:8080/add-view
+- Get Book View: http://127.0.0.1:8080/get-view
+- Delete Book View: http://127.0.0.1:8080/delete-view
+
 
 ## Error Handling - logging
 We will use Winston logging library to log information for error handling. I have implemented it in this app so whenever you run an API, you can view the logs in your terminal or command prompt while your Node.js application is running. 
