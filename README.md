@@ -51,7 +51,7 @@ DATABASE_URL =  '<your-library-database>'
 ## Usage
 ### 1. Select a feature:
 - There are 3 requests for this project. On the front-end home page, you will see three buttons, which are Add Book(post request), Get Book(get request) and Delete Book(delete request).
-<img align="left" width=100% height=100% src="https://github.com/msitu22/librarySystem/assets/112602900/9236c2f8-94bd-4318-bbd4-786a291c84a6">
+<img align="left" width=70% height=70% src="https://github.com/msitu22/librarySystem/assets/112602900/9236c2f8-94bd-4318-bbd4-786a291c84a6">
 
 
 ### 2. Add a book:
