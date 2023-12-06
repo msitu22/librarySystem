@@ -84,16 +84,15 @@ DATABASE_URL =  '<your-library-database>'
 
 ## Frontend Integration
 This project provides simple HTML, EJS views, CSS and Javascript for the frontend.
-- Home View: http://127.0.0.1:8080/
-- Add Book View: http://127.0.0.1:8080/add-view
-- Get Book View: http://127.0.0.1:8080/get-view
-- Delete Book View: http://127.0.0.1:8080/delete-view
+- Home View: https://127.0.0.1:8080/
+- Add Book View: https://127.0.0.1:8080/add-view
+- Get Book View: https://127.0.0.1:8080/get-view
+- Delete Book View: https://127.0.0.1:8080/delete-view
 
 
 ## Error Handling - logging
 We will use Winston logging library to log information for error handling. I have implemented it in this app so whenever you run an API, you can view the logs in your terminal or command prompt while your Node.js application is running. 
 ![image](https://github.com/msitu22/librarySystem/assets/112602900/f937b3a2-9f0e-4584-969b-79ae4838a25d)
-
 
 ## Install SSL Certificates(Optional)
 We are using HTTPS make request and below are the steps to install SSL certificates. SSL certificates allow web servers to encrypt their traffic, and also offer a mechanism to validate server identities to their visitors. Websites using SSL are accessed via the https:// protocol.
