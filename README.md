@@ -1,4 +1,4 @@
-# library System
+# Library System
 ## Intro
 This guide will walk you through the process of using a library system that provides functionalities for adding, getting, and deleting books. The system is built using Express.js for the server, MongoDB for the database and Javascript for front-end.
 
