@@ -18,28 +18,28 @@ addBook.post('/add', async (req, res) => {
     })
   
     try {
-       // Checking if the book with the given ISBN already exists
-        if (data.isbn) {
-          const book = await Book.findOne({ isbn: data.isbn });
-          // If the book exists, add the quantity to the existing book and save
-          if (book) {
-            book.quantity += data.quantity;
-            await book.save();
-            logger.info(`Book already exists, added to existing book collection. Now this book has ${book.quantity} copies in stock.`);
-            return res.status(409).json({
-              message: `Book already exists, added to existing book collection. Now this book has ${book.quantity} copies in stock.`
-            });
-          }
+        // Checking if the book already exists in the database
+        const book = await Book.findOne({ isbn: data.isbn });
+        // If the book exists and author name is the same, add the quantity to the existing book and save
+        if (book && book.book_name === data.book_name && book.author_name === data.author_name && book.publisher === data.publisher && book.published_year === data.published_year) {
+          book.quantity += data.quantity;
+          await book.save();
+          logger.info(`Book already exists, added to existing book collection. Now this book has ${book.quantity} copies in stock.`);
+          return res.status(409).json({
+            message: `Book already exists, added to existing book collection. Now this book has ${book.quantity} copies in stock.`
+          })
+        } else if (book && book.book_name !== data.book_name || book.author_name !== data.author_name || book.publisher !== data.publisher || book.published_year !== data.published_year) {
+          logger.error('Book already exists with different details');
+          return res.status(409).json({
+            message: 'Book already exists with different details'
+          })
         }
-        // If the book does not exist, save the new book data to the database
-        await data.save();
-        res.status(200).json({ message: 'Book has been added', data });
-        logger.info('Book has been added');
+      await data.save();
+      res.status(200).json({ message: 'Book has been added', data });
+      logger.info('Book has been added');
       } catch (error) {
         logger.error(error);
         res.status(500).json({ message: 'Internal Server Error' });
       }
-    });
-    
-
-
+    }
+  );
