@@ -65,22 +65,22 @@ DATABASE_URL =  '<your-library-database>'
 <img align="center" width=60% height=60% src="https://github.com/msitu22/librarySystem/assets/112602900/3bccd6a4-4ade-4f56-a97e-d536f15448cc">
 
 - If the book's isbn exsits in the database but other book items is not, new book is not able to add because the new book isbn might be incorrect
-<img align="center" width=60% height=60% src="https://github.com/msitu22/librarySystem/assets/112602900/41b5b63e-1bea-4aac-8a0e-7cad56db0b53">
+<img align="center" width=50% height=50% src="https://github.com/msitu22/librarySystem/assets/112602900/41b5b63e-1bea-4aac-8a0e-7cad56db0b53">
 
 ### 3. Get a Book
 - To retrieve information about a specific book by ISBN, make a GET request to the /get/:isbn endpoint. On the front-end, the endpoint is /get-view
-<img align="center" width=60% height=60% src="https://github.com/msitu22/librarySystem/assets/112602900/cfd8de6b-d650-4046-afd0-45c6895e427b">
+<img align="center" width=40% height=40% src="https://github.com/msitu22/librarySystem/assets/112602900/cfd8de6b-d650-4046-afd0-45c6895e427b">
 
 - If the isbn does not exist, the message "Book not found" will prompt.
-<img align="center" width=60% height=60% src="https://github.com/msitu22/librarySystem/assets/112602900/26ae6774-aaf6-4f0b-948b-aca08a6f21e0">
+<img align="center" width=40% height=40% src="https://github.com/msitu22/librarySystem/assets/112602900/26ae6774-aaf6-4f0b-948b-aca08a6f21e0">
  
 
 ### 4. Delete a Book
 - To delete a book by ISBN, make a DELETE request to the /delete/:isbn endpoint. On the front-end, the endpoint is /delete-view
-<img align="center" width=60% height=60% src="https://github.com/msitu22/librarySystem/assets/112602900/040b8652-36f7-45e8-8b02-148c93d8326f">
+<img align="center" width=40% height=40% src="https://github.com/msitu22/librarySystem/assets/112602900/040b8652-36f7-45e8-8b02-148c93d8326f">
 
 - If the isbn does not exist, the error message will prompt.
-<img align="center" width=60% height=60% src="https://github.com/msitu22/librarySystem/assets/112602900/ba0f0d03-6f1c-481d-8a8e-38a4033ef266">
+<img align="center" width=40% height=40% src="https://github.com/msitu22/librarySystem/assets/112602900/ba0f0d03-6f1c-481d-8a8e-38a4033ef266">
 
 ## Frontend Integration
 This project provides simple HTML, EJS views, CSS and Javascript for the frontend.
