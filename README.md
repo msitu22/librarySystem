@@ -1,8 +1,11 @@
 # library System
+## Intro
+This guide will walk you through the process of using a library system that provides functionalities for adding, getting, and deleting books. The system is built using Express.js for the server, MongoDB for the database and Javascript for front-end.
 
 ## Prerequisites
-Mke sure you have the following prerequisites in place:
-- Access Credentials: You need to obtain MongoDB link in the MongoDB site
+Before you begin, make sure you have the following installed on your system:
+- Node.js: The JavaScript runtime used to execute server-side code.
+- MongoDB: The NoSQL database used to store book information.
 - Environment Setup: Configure your development environment to make HTTPS requests to our API endpoints. Also need to install required dependencies.
 
 ## Environment Setup
