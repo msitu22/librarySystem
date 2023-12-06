@@ -65,7 +65,7 @@ DATABASE_URL =  '<your-library-database>'
 <img align="center" width=60% height=60% src="https://github.com/msitu22/librarySystem/assets/112602900/3bccd6a4-4ade-4f56-a97e-d536f15448cc">
 
 - If the book's isbn exsits in the database but other book items is not, new book is not able to add because the new book isbn might be incorrect
-<img align="center" width=50% height=50% src="https://github.com/msitu22/librarySystem/assets/112602900/41b5b63e-1bea-4aac-8a0e-7cad56db0b53">
+<img align="center" width=30% height=30% src="https://github.com/msitu22/librarySystem/assets/112602900/41b5b63e-1bea-4aac-8a0e-7cad56db0b53">
 
 ### 3. Get a Book
 - To retrieve information about a specific book by ISBN, make a GET request to the /get/:isbn endpoint. On the front-end, the endpoint is /get-view
