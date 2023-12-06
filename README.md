@@ -1,4 +1,4 @@
-# librarySystem
+# library System
 
 ## Prerequisites
 Mke sure you have the following prerequisites in place:
